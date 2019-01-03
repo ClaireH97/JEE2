@@ -1,19 +1,14 @@
-package jee.model;
+package group2jee.projet2.jee.model;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import jee.model.EmployeeBean;
-import jee.model.User;
-import utils.Constants;
+import group2jee.projet2.utils.Constants;
 
 public class DataAccess {
     
@@ -28,7 +23,7 @@ public class DataAccess {
     
     public Connection getConnection() {
         try {
-            Properties prop = new Properties();
+            /*Properties prop = new Properties();
             InputStream input;
             ClassLoader cl = Thread.currentThread().getContextClassLoader();
             input = cl.getResourceAsStream(Constants.PATH_PROPERTIES_FILE);
@@ -36,11 +31,14 @@ public class DataAccess {
             
             dbUrl = prop.getProperty(Constants.DB_URL);
             user = prop.getProperty(Constants.DB_USER);
-            pwd = prop.getProperty(Constants.DB_PWD);
+            pwd = prop.getProperty(Constants.DB_PWD);*/
+            dbUrl = Constants.DB_URL_2;
+            user = Constants.DB_USER_2;
+            pwd = Constants.DB_PWD_2;
             
             dbConn = DriverManager.getConnection(dbUrl, user, pwd);
             
-        } catch (SQLException | IOException ex) {
+        } catch (SQLException /*| IOException*/ ex) {
             Logger.getLogger(DataAccess.class.getName()).log(Level.SEVERE, null, ex);
         }
         return dbConn;

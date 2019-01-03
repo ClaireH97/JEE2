@@ -1,6 +1,5 @@
-package control;
+package group2jee.projet2.control;
 
-import jee.model.DataAccess;
 import java.io.IOException;
 import java.util.ArrayList;
 import javax.servlet.ServletException;
@@ -8,13 +7,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import jee.model.User;
-import utils.Constants;
+import group2jee.projet2.jee.model.DataAccess;
+import group2jee.projet2.jee.model.User;
+import group2jee.projet2.utils.Constants;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import jee.model.EmployeeBean;
+import group2jee.projet2.jee.model.EmployeeBean;
 
 public class Controller extends HttpServlet {
     
@@ -33,12 +33,9 @@ public class Controller extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    
-   
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        System.out.println("test0");
         // To be able to use the "session" object like we did in the JSPs
         HttpSession session = request.getSession();
         db = new DataAccess();
@@ -49,7 +46,7 @@ public class Controller extends HttpServlet {
         ResultSet rs = db.getResultSet(statement, queryUser);
         listUsers = db.getUsers(rs);
         
-        System.out.println("test");
+        
         
         // User input
         String loginEntered = request.getParameter(Constants.LOGIN_FIELD);
@@ -89,8 +86,6 @@ public class Controller extends HttpServlet {
                 }
             }
         }
-        
-        System.out.println("test2");
         
         if (user == null) {
             // User redirected to login page if they are not logged in

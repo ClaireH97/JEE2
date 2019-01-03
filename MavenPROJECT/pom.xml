@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project 
-xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
-		 http://maven.apache.org/maven-v4_0_0.xsd">
-<modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.mycompany</groupId>
+    <groupId>group2jee</groupId>
     <artifactId>MavenPROJECT</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
@@ -14,16 +10,11 @@ xmlns="http://maven.apache.org/POM/4.0.0"
     <name>MavenPROJECT</name>
 
     <properties>
-        <webXmlPath>src\main\webapp\web.xml</webXmlPath>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <spring.version>5.1.0.RELEASE</spring.version>
     </properties>
     
     <dependencies>
-     
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
@@ -31,21 +22,9 @@ xmlns="http://maven.apache.org/POM/4.0.0"
             <scope>provided</scope>
         </dependency>
     </dependencies>
-
+    
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>2.4</version>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <mainClass>control.Controller</mainClass>
-                        </manifest>
-                    </archive>
-                </configuration>
-            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -91,9 +70,17 @@ xmlns="http://maven.apache.org/POM/4.0.0"
                     </execution>
                 </executions>
             </plugin>
-            
-
         </plugins>
+        
+        <resources>
+            <resource>
+                <directory>src/main/java/group2jee/projet2/utils</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>db.properties</include>
+                </includes>
+            </resource>
+        </resources>
     </build>
-    
+
 </project>

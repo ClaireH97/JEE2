@@ -1,10 +1,4 @@
-<%-- 
-    Document   : welcome
-    Created on : 26 oct. 2018, 15:41:04
-    Author     : Jacques
---%>
-
-<%@page import="jee.model.User"%>
+<%@page import="group2jee.projet2.jee.model.User"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 

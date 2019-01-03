@@ -1,4 +1,4 @@
-package jee.model;
+package group2jee.projet2.jee.model;
 
 public class EmployeeBean {
     
