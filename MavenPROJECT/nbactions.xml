@@ -47,4 +47,18 @@
                 <netbeans.deploy.clientUrlPart></netbeans.deploy.clientUrlPart>
             </properties>
         </action>
+        <action>
+            <actionName>CUSTOM-Maven test production</actionName>
+            <displayName>Maven test production</displayName>
+            <goals>
+                <goal>properties:read-project-properties</goal>
+                <goal>clean</goal>
+                <goal>install</goal>
+                <goal>glassfish:redeploy</goal>
+                <goal>-e</goal>
+            </goals>
+            <properties>
+                <glassfish.properties.file.argument>production</glassfish.properties.file.argument>
+            </properties>
+        </action>
     </actions>
