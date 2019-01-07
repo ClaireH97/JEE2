@@ -1,5 +1,6 @@
 package group2jee.projet2.control;
 
+import group2jee.projet2.jee.model.Credentials;
 import java.io.IOException;
 import java.util.ArrayList;
 import javax.servlet.ServletException;
@@ -15,14 +16,21 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import group2jee.projet2.jee.model.EmployeeBean;
+import group2jee.projet2.jee.model.Employees;
+import group2jee.projet2.jee.model.EmployeesSessionBean;
+import java.util.Collection;
+//import group2jee.projet2.jee.model.EmployeesSessionBean;
+import javax.ejb.EJB;
 
 public class Controller extends HttpServlet {
+    @EJB
+    private EmployeesSessionBean employeesSessionBean;
     
-    ArrayList<EmployeeBean> listEmployees;
-    ArrayList<User> listUsers;
+    Collection<Employees> listEmployees;
+    Collection<Credentials> listUsers;
+    
+    //TODO A SUPP
     DataAccess db;
-    String queryEmployees;
-    String queryUser;
     
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -38,13 +46,12 @@ public class Controller extends HttpServlet {
         
         // To be able to use the "session" object like we did in the JSPs
         HttpSession session = request.getSession();
+        // TODO A SUPP
         db = new DataAccess();
         Connection connection = db.getConnection();
         Statement statement = db.getStatement(connection);
-        queryEmployees = Constants.QUERY_SELECT_EMPLOYEES;
-        queryUser = Constants.QUERY_SELECT_CREDENTIALS;
-        ResultSet rs = db.getResultSet(statement, queryUser);
-        listUsers = db.getUsers(rs);
+        // 
+        listUsers = employeesSessionBean.getUsers();
         
         
         
@@ -64,9 +71,9 @@ public class Controller extends HttpServlet {
             else {
                 boolean ok = false;
                 // Searching credentials...
-                for (User u : listUsers) {
+                for (Credentials u : listUsers) {
                     // If the credentials are correct
-                    if ((loginEntered.equals(u.getLogin())) && pwdEntered.equals(u.getPwd())) {
+                    if ((loginEntered.equals(u.getLogin())) && pwdEntered.equals(u.getPassword())) {
                         // create the user
                         user = new User();
                         user.setLogin(loginEntered);
@@ -117,7 +124,7 @@ public class Controller extends HttpServlet {
                 case Constants.ACTION_DETAILS:
                     int radioButton1 = Integer.parseInt(request.getParameter(Constants.REQUEST_RADIOS)); // you get the emplId in the button value
                     
-                    for (EmployeeBean e : listEmployees) {
+                    for (Employees e : listEmployees) {
                         if (e.getId() == radioButton1)
                         {
                             request.setAttribute(Constants.REQUEST_EMPLOYEE, e);
@@ -170,7 +177,7 @@ public class Controller extends HttpServlet {
             
             // If the user has not been forwarded yet, we display the welcome page (employee list)
             if (!forwarded) {
-                listEmployees = db.getEmployees(db.getResultSet(statement, queryEmployees)); // Updating employee list
+                listEmployees = employeesSessionBean.getEmployees(); // Updating employee list
                 request.setAttribute(Constants.REQUEST_EMPLOYEELIST, listEmployees);
                 request.getRequestDispatcher(Constants.WELCOME_PAGE).forward(request, response);
             }
