@@ -31,7 +31,20 @@ public class EmployeesSessionBean {
         return q.getResultList();
     }
 
+    public void deleteEmployee(int emplId){
+        Query q = em.createQuery("DELETE from e WHERE e.id = "+emplId);
+        q.executeUpdate();
+    }
     
+    public void updateEmployee(String id, String name, String firstName, String homePhone, String mobilePhone, String officePhone, String address, String postalCode, String city, String email){
+        Query q = em.createQuery("UPDATE e SET e.name = '" + name + "', e.firstname = '" + firstName + "', e.telhome = '" + homePhone + "', e.telmob = '" + mobilePhone + "', e.telpro = '" + officePhone + "', e.adress = '" + address + "', e.postalcode = '" + postalCode + "', e.city = '" + city + "', e.email = '" + email + "' WHERE e.id =" + id);
+        q.executeUpdate();
+    }
+    
+    public void addEmployee(String name, String firstName, String homePhone, String mobilePhone, String officePhone, String address, String postalCode, String city, String email){
+        Query q = em.createQuery("INSERT INTO EMPLOYEES (e.name, e.firstname, e.telhome, e.telmob,e.telpro,e.adress,e.postalcode,e.city,e.email) VALUES ('" + name + "', '" + firstName + "', '" + homePhone + "', '" + mobilePhone + "', '" + officePhone + "', '" + address + "', '" + postalCode + "', '" + city + "', '" + email + "')");
+        q.executeUpdate();
+    }
     
     public void persist(Object object) {
         em.persist(object);

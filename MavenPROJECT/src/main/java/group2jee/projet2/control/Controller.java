@@ -2,24 +2,19 @@ package group2jee.projet2.control;
 
 import group2jee.projet2.jee.model.Credentials;
 import java.io.IOException;
-import java.util.ArrayList;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import group2jee.projet2.jee.model.DataAccess;
+
 import group2jee.projet2.jee.model.User;
 import group2jee.projet2.utils.Constants;
-
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
-import group2jee.projet2.jee.model.EmployeeBean;
-import group2jee.projet2.jee.model.Employees;
 import group2jee.projet2.jee.model.EmployeesSessionBean;
+import group2jee.projet2.jee.model.Employees;
+
 import java.util.Collection;
-//import group2jee.projet2.jee.model.EmployeesSessionBean;
 import javax.ejb.EJB;
 
 public class Controller extends HttpServlet {
@@ -28,9 +23,6 @@ public class Controller extends HttpServlet {
     
     Collection<Employees> listEmployees;
     Collection<Credentials> listUsers;
-    
-    //TODO A SUPP
-    DataAccess db;
     
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -46,11 +38,7 @@ public class Controller extends HttpServlet {
         
         // To be able to use the "session" object like we did in the JSPs
         HttpSession session = request.getSession();
-        // TODO A SUPP
-        db = new DataAccess();
-        Connection connection = db.getConnection();
-        Statement statement = db.getStatement(connection);
-        // 
+        
         listUsers = employeesSessionBean.getUsers();
         
         
@@ -111,7 +99,7 @@ public class Controller extends HttpServlet {
                 //delete button was pressed
                 case Constants.ACTION_DELETE:
                     int radioButton = Integer.parseInt(request.getParameter(Constants.REQUEST_RADIOS)); // you get the emplId in the button value
-                    db.deleteEmployee(radioButton); // remove from db
+                    employeesSessionBean.deleteEmployee(radioButton); // remove from db
                     break;
                     
                     //add button was pressed
@@ -152,11 +140,11 @@ public class Controller extends HttpServlet {
                     
                     // If it is an update of an existing employee
                     if (!id.isEmpty()) {
-                        db.updateEmployee(id, name, firstName, homePhone, mobilePhone, officePhone, address, postalCode, city, email);
+                        employeesSessionBean.updateEmployee(id, name, firstName, homePhone, mobilePhone, officePhone, address, postalCode, city, email);
                     }
                     // If it is a new employee
                     else {
-                        db.addEmployee(name, firstName, homePhone, mobilePhone, officePhone, address, postalCode, city, email);
+                        employeesSessionBean.addEmployee(name, firstName, homePhone, mobilePhone, officePhone, address, postalCode, city, email);
                     }
                     
                     
