@@ -11,11 +11,6 @@ public class Constants {
     public static final String DB_USER_2 = "adm";
     public static final String DB_PWD_2 = "adm";
     
-    public static final String QUERY_SELECT_EMPLOYEES = "SELECT * FROM EMPLOYEES";
-    public static final String QUERY_UPDATE_EMPLOYEE = "";
-    public static final String QUERY_DELETE_EMPLOYEE = "";
-    public static final String QUERY_SELECT_CREDENTIALS = "SELECT LOGIN, PASSWORD FROM CREDENTIALS";
-    
     public static final String SESSION_USER = "user";
     
     public static final String REQUEST_EMPLOYEELIST = "employeeList";

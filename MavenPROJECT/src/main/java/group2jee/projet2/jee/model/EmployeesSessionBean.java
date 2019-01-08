@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package group2jee.projet2.jee.model;
 
 import java.util.Collection;
@@ -11,10 +6,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
-/**
- *
- * @author Jacques
- */
+
 @Stateless
 public class EmployeesSessionBean {
 
