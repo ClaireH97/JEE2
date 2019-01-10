@@ -41,7 +41,7 @@ After cloning the project at this address : <br>
 https://github.com/VincentRoche/JEE.git<br>
 Step 1 : Clean and build the project<br>
 Step 2 : Run the project
-<br>
+<br><br>
 In this version, you have the following Parameters : <br>
 o JSP (scriptlets accepted) + Java Beans + Servlet + JDBC<br>
 o db.properties file to store information about the database <br>
