@@ -37,8 +37,8 @@ Password : adm<br>
 <h1>Version 1 (https://github.com/VincentRoche/JEE)</h1>
 <h2>How to launch Version 1?</h2>
 After cloning the project from this address : https://github.com/VincentRoche/JEE.git<br>
-Step 1 : Create a JavaDB database (name=PROJET, username=adm, password=adm)
-Step 2 : Fill the database by executing sqlScript.sql (https://github.com/VincentRoche/JEE/blob/master/web/WEB-INF/sqlScript.sql)
+Step 1 : Create a JavaDB database (name=PROJET, username=adm, password=adm)<br>
+Step 2 : Fill the database by executing sqlScript.sql (https://github.com/VincentRoche/JEE/blob/master/web/WEB-INF/sqlScript.sql)<br>
 Step 2 : Clean and build the project<br>
 Step 3 : Run the project
 
