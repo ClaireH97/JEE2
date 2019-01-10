@@ -144,7 +144,18 @@ public class Controller extends HttpServlet {
                     }
                     // If it is a new employee
                     else {
-                        employeesSessionBean.addEmployee(name, firstName, homePhone, mobilePhone, officePhone, address, postalCode, city, email);
+                        Employees e = new Employees();
+                        e.setName(name);
+                        e.setFirstname(firstName);
+                        e.setTelhome(homePhone);
+                        e.setTelmob(mobilePhone);
+                        e.setTelpro(officePhone);
+                        e.setAdress(address);
+                        e.setPostalcode(postalCode);
+                        e.setCity(city);
+                        e.setEmail(email);
+                        
+                        employeesSessionBean.persist(e);
                     }
                     
                     

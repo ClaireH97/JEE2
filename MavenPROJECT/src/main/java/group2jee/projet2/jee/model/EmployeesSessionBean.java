@@ -34,21 +34,6 @@ public class EmployeesSessionBean {
         q.executeUpdate();
     }
     
-    public void addEmployee(String name, String firstName, String homePhone, String mobilePhone, String officePhone, String address, String postalCode, String city, String email) {
-        Employees e = new Employees();
-        e.setName(name);
-        e.setFirstname(firstName);
-        e.setTelhome(homePhone);
-        e.setTelmob(mobilePhone);
-        e.setTelpro(officePhone);
-        e.setAdress(address);
-        e.setPostalcode(postalCode);
-        e.setCity(city);
-        e.setEmail(email);
-        
-        persist(e);
-    }
-    
     public void persist(Object object) {
         em.persist(object);
     }
