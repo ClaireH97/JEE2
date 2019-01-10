@@ -48,17 +48,16 @@
             </properties>
         </action>
         <action>
-            <actionName>CUSTOM-Maven test production</actionName>
-            <displayName>Maven test production</displayName>
+            <actionName>CUSTOM-Test development</actionName>
+            <displayName>Test development</displayName>
             <goals>
                 <goal>properties:read-project-properties</goal>
-                <goal>clean</goal>
-                <goal>install</goal>
-                <goal>glassfish:redeploy</goal>
+                <goal>glassfish:deploy</goal>
                 <goal>-e</goal>
             </goals>
             <properties>
-                <glassfish.properties.file.argument>production</glassfish.properties.file.argument>
+                <glassfish.properties.file.argument>development</glassfish.properties.file.argument>
             </properties>
         </action>
+        
     </actions>
