@@ -36,8 +36,7 @@ Password : adm<br>
 
 <h1>Version 1 (https://github.com/VincentRoche/JEE)</h1>
 <h2>How to launch Version 1?</h2>
-After cloning the project from this address : <br>
-https://github.com/VincentRoche/JEE.git<br>
+After cloning the project from this address : https://github.com/VincentRoche/JEE.git<br>
 Step 1 : Create a JavaDB database (name=PROJET, username=adm, password=adm)
 Step 2 : Fill the database by executing sqlScript.sql (https://github.com/VincentRoche/JEE/blob/master/web/WEB-INF/sqlScript.sql)
 Step 2 : Clean and build the project<br>
@@ -61,8 +60,7 @@ db.properties file is located in the src/java/utils folder<br>
 
 <h1>Version 2 (https://github.com/ClaireH97/JEE2)</h1>
 <h2>How to launch Version 2?</h2>
-After cloning the project from this address : <br>
-https://github.com/ClaireH97/JEE2.git<br>
+After cloning the project from this address : https://github.com/ClaireH97/JEE2.git<br>
 Step 1 : create a MySQL database named "PROJET"<br>
 Step 2 : create an user "adm" with password "adm" <br>
 Step 3 : execute the SQL script to fill the database (https://github.com/ClaireH97/JEE2/blob/master/MavenPROJECT/src/main/webapp/WEB-INF/mysqlScript.sql)<br>
