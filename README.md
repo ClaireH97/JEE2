@@ -89,10 +89,14 @@ In order to give access to the user to the different contents of our web applica
 In order to respect the MVC model, you can find our javaBeans in the source package, folder : group2jee.projet2.jee.<b>model</b>
 
 <h3>Servlet</h3>
+Those servlet, will help us to treat the request and redirect the client through the different JSP 
 
 <h3>Persistance with JPA </h3>
 You can find our Persistance file at this path : src/main/resources/META-INF<br>
 This Persistance file will be used by EmployeesSessionBean.java<br>
+
+<h3>SGBD : MySQL</h3>
+In order to use the MySQL Connection, please follow the instruction Step 1 and Step 2 <br>
 
 <h3>Continuous delivery pipeline with Jenkins</h3>
 Please follow the different steps presented in the file<b>"How to create the pipeline.pdf"</b>
