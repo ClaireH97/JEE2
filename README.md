@@ -26,6 +26,7 @@ On the upper right of each page (except the login page obviously) show: <br>
 1) "Your session is active" <br>
 2) The icon that allows the user to logout (leave the session)<br>
 <br>
+
 1. Good bye page<br>
 2. Constants are in the utils folder, in the file Constants.java<br>
 3. Our database if configured as <br>
