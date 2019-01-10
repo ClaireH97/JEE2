@@ -100,4 +100,4 @@ In order to use the MySQL Connection, please follow steps 1 and 2 above. <br>
 If you check your Glassfish-ressources.xml, you will see the new jdbc connection pool that we have created in order to connect this maven project to MySQL (all params are here).
 
 <h3>Continuous delivery pipeline with Jenkins</h3>
-Please follow the different steps presented in the file<b>"How to create the pipeline.pdf" (https://github.com/ClaireH97/JEE2/blob/master/How%20to%20create%20the%20pipeline.pdf)</b>
+Please follow the different steps presented in the file <b>"How to create the pipeline.pdf" (https://github.com/ClaireH97/JEE2/blob/master/How%20to%20create%20the%20pipeline.pdf)</b>
