@@ -63,7 +63,7 @@ db.properties file is located in the src/java/utils folder<br>
 After cloning the project at this address : <br>
 https://github.com/ClaireH97/JEE2.git<br>
 Step 1 : create a mysql database named "PROJET"<br>
-Step 2 : create a user "adm" password "adm" <br>
+Step 2 : create an user "adm" password "adm" <br>
 Step 3 : execute the sql script<br>
 Step 4 : Clean and build the project<br>
 Step 5 : Run the project<br><br>
