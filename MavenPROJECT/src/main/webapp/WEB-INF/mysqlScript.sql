@@ -1,5 +1,3 @@
-
-
 CREATE TABLE EMPLOYEES (
 	ID INTEGER NOT NULL AUTO_INCREMENT,
 	NAME VARCHAR(50) NOT NULL,
@@ -23,8 +21,8 @@ INSERT INTO EMPLOYEES(NAME,FIRSTNAME,TELHOME,TELMOB,TELPRO,ADRESS,POSTALCODE,CIT
 ('Billes','Guillaume','0102030405','0607080909','0606060606','1 rue de la rue','75000','Paris','bg@efrei.net'),
 ('Farge','Guillaume','0102030405','0607080909','0606060606','88 avenue Julien Lepers','88888','Une ville','fg@efrei.net'),
 ('Huang','Claire','0102030405','0607080909','0606060606','11 rue de la mer','12345','La mer sur mer','hc@efrei.net'),
-('Wolf','Morgan','0102030405','0607080909','0606060606','44 rue des loups','98765','Saint Jean de Sainte Jeanine','wm@efrei.net'),
-('Roche','Vincent','0102030405','0607080909','0606060606','77 avenue soixante-dix-sept','43210','La Maison sainte gare sous bois','rv@efrei.net');
+('Wolf','Morgan','0102030405','0607080909','0606060606','44 rue des loups','98765','Saint Jean de Jeanine','wm@efrei.net'),
+('Roche','Vincent','0102030405','0607080909','0606060606','77 avenue soixante-dix-sept','43210','La Maison sainte gare','rv@efrei.net');
 
 
 CREATE TABLE CREDENTIALS (
