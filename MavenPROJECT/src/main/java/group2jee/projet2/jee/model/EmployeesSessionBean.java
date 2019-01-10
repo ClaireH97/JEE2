@@ -34,9 +34,7 @@ public class EmployeesSessionBean {
         q.executeUpdate();
     }
     
-    public void addEmployee(String name, String firstName, String homePhone, String mobilePhone, String officePhone, String address, String postalCode, String city, String email){
-        em.getTransaction().begin();
-        
+    public void addEmployee(String name, String firstName, String homePhone, String mobilePhone, String officePhone, String address, String postalCode, String city, String email) {
         Employees e = new Employees();
         e.setName(name);
         e.setFirstname(firstName);
@@ -49,7 +47,6 @@ public class EmployeesSessionBean {
         e.setEmail(email);
         
         em.persist(e);
-        em.getTransaction().commit();
     }
     
     public void persist(Object object) {
