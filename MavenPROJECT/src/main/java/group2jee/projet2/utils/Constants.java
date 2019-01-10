@@ -1,15 +1,6 @@
 package group2jee.projet2.utils;
 
 public class Constants {
-
-    //Constantes related to the properties file
-    public static final String PATH_PROPERTIES_FILE = "group2jee/projet2/utils/db.properties";
-    public static final String DB_URL = "dbUrl";
-    public static final String DB_USER = "dbUser";
-    public static final String DB_PWD = "dbPwd";
-    public static final String DB_URL_2 = "jdbc:derby://localhost:1527/PROJET";
-    public static final String DB_USER_2 = "adm";
-    public static final String DB_PWD_2 = "adm";
     
     public static final String SESSION_USER = "user";
     
