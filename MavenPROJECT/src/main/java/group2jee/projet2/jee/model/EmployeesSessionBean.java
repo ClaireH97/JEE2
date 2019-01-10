@@ -11,7 +11,8 @@ import javax.persistence.Query;
 @Stateless
 public class EmployeesSessionBean {
     
-    @PersistenceContext(unitName = "jee2_JPAPU")
+    
+    @PersistenceContext(unitName = "group2jeeMysql")
     private EntityManager em;
     
     public Collection<Employees> getEmployees() {
@@ -37,5 +38,6 @@ public class EmployeesSessionBean {
     public void persist(Object object) {
         em.persist(object);
     }
+
     
 }

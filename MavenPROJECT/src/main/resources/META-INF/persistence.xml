@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
-  <persistence-unit name="jee2_JPAPU" transaction-type="JTA">
-    <jta-data-source>java:app/projetDB</jta-data-source>
-    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+  <persistence-unit name="group2jeeMysql" transaction-type="JTA">
+    <jta-data-source>java:app/jeeMysqlDataSource</jta-data-source>
+    <class>group2jee.projet2.jee.model.Credentials</class>
+    <class>group2jee.projet2.jee.model.Employees</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <properties/>
   </persistence-unit>
 </persistence>
