@@ -41,7 +41,7 @@ After cloning the project at this address : <br>
 https://github.com/VincentRoche/JEE.git<br>
 Step 1 : Clean and build the project<br>
 Step 2 : Run the project
-
+<br>
 In this version, you have the following Parameters : <br>
 o JSP (scriptlets accepted) + Java Beans + Servlet + JDBC<br>
 o db.properties file to store information about the database <br>
@@ -49,11 +49,11 @@ o SQL script in /WEB-INF<br>
 o All the JSPs in /WEB-INF <br>
 o SGBD = Java DB<br>
 
-<h2>Jsp, java beans, servlet, jdbc</h2>
+<h3>Jsp, java beans, servlet, jdbc</h3>
 Jsp are located in the web/WEB-INF folder<br>
 Java beans are located in the jee/model folder<br>
 In this version, the database used is the one from netbeans Java DB
-<h2>.properties</h2>
+<h3>.properties</h3>
 db.properties file is located in the src/java/utils folder<br>
 
 
@@ -63,8 +63,8 @@ db.properties file is located in the src/java/utils folder<br>
 After cloning the project at this address : <br>
 https://github.com/ClaireH97/JEE2.git<br>
 Step 1 : Clean and build the project<br>
-Step 2 : Run the project<br>
-<br>
+Step 2 : Run the project<br><br>
+
 In this version, you have the following Parameters : 
 o Maven project <br>
 o JSP  (EL et JSTL only / Please no Java code in your JSPs)<br>
