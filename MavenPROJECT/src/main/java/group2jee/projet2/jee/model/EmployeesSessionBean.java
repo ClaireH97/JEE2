@@ -46,7 +46,7 @@ public class EmployeesSessionBean {
         e.setCity(city);
         e.setEmail(email);
         
-        em.persist(e);
+        persist(e);
     }
     
     public void persist(Object object) {
