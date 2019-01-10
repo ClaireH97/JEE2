@@ -97,6 +97,7 @@ This Persistance file will be used by EmployeesSessionBean.java<br>
 
 <h3>SGBD : MySQL</h3>
 In order to use the MySQL Connection, please follow the instruction Step 1 and Step 2 <br>
+If you check your Glassfish-ressources.xml, you will see the new jdbc connection pool that we have created in order to connect this maven project to mysql (all params are here).
 
 <h3>Continuous delivery pipeline with Jenkins</h3>
 Please follow the different steps presented in the file<b>"How to create the pipeline.pdf"</b>
