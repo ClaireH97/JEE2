@@ -42,12 +42,12 @@ https://github.com/VincentRoche/JEE.git<br>
 Step 1 : Clean and build the project<br>
 Step 2 : Run the project
 
-In this version, you have the following Parameters : 
-o JSP (scriptlets accepted) + Java Beans + Servlet + JDBC
-o db.properties file to store information about the database 
-o SQL script in /WEB-INF
-o All the JSPs in /WEB-INF 
-o SGBD = Java DB
+In this version, you have the following Parameters : <br>
+o JSP (scriptlets accepted) + Java Beans + Servlet + JDBC<br>
+o db.properties file to store information about the database <br>
+o SQL script in /WEB-INF<br>
+o All the JSPs in /WEB-INF <br>
+o SGBD = Java DB<br>
 
 <h2>Jsp, java beans, servlet, jdbc</h2>
 Jsp are located in the web/WEB-INF folder<br>
@@ -63,8 +63,8 @@ db.properties file is located in the src/java/utils folder<br>
 After cloning the project at this address : <br>
 https://github.com/ClaireH97/JEE2.git<br>
 Step 1 : Clean and build the project<br>
-Step 2 : Run the project
-
+Step 2 : Run the project<br>
+<br>
 In this version, you have the following Parameters : 
 o Maven project <br>
 o JSP  (EL et JSTL only / Please no Java code in your JSPs)<br>
@@ -74,22 +74,22 @@ o Persistance with JPA<br>
 o SGBD : MySQL <br>
 o Continuous delivery pipeline with Jenkins using that version<br>
 
-<h2>Maven project :</h2>
+<h3>Maven project :</h3>
 This project had been created as a Maven Project in order to have a build automation.<br>
 Maven project is a little bit different compared to a webApplication.<br>
 Indeed, here, we can see how the software is build and all its dependencies (in Pom.xml).<br>
 
-<h2>JSP, java server pages</h2>
+<h3>JSP, java server pages</h3>
 In order to give access to the user to the different contents of our web application, all the pages are .jsp are presented in the WEB-INF folder.
 
-<h2>JavaBeans</h2>
+<h3>JavaBeans</h3>
 In order to respect the MVC model, you can find our javaBeans in the source package, folder : group2jee.projet2.jee.<b>model</b>
 
-<h2>Servlet</h2>
+<h3>Servlet</h3>
 
-<h2>Persistance with JPA </h2>
+<h3>Persistance with JPA </h3>
 You can find our Persistance file at this path : src/main/resources/META-INF<br>
 This Persistance file will be used by EmployeesSessionBean.java<br>
 
-<h2>Continuous delivery pipeline with Jenkins</h2>
+<h3>Continuous delivery pipeline with Jenkins</h3>
 Please follow the different steps presented in the file<b>"How to create the pipeline.pdf"</b>
