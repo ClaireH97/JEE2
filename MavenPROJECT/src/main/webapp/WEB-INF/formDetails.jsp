@@ -28,7 +28,7 @@
                             Home phone <input type="text" name="homephone" class="form-control" value="${emp.telhome}"/>
                             Mobile phone <input type="text" name="mobilephone" class="form-control" value="${emp.telmob}"/>
                             Office phone <input type="text" name="officephone" class="form-control" value="${emp.telpro}"/>
-                            Address <input type="text" name="address" class="form-control" value="${emp.address}"/>
+                            Address <input type="text" name="address" class="form-control" value="${emp.adress}"/>
                             Postal code <input type="text" name="postalcode" class="form-control" value="${emp.postalcode}"/>
                             City <input type="text" name="city" class="form-control" value="${emp.city}"/>
                             Email <input type="text" name="email" class="form-control" value="${emp.email}"/>

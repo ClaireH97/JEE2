@@ -1,6 +1,8 @@
+group2jee\projet2\jee\model\Employees_.class
 group2jee\projet2\jee\model\EmployeeBean.class
 group2jee\projet2\control\Controller.class
 group2jee\projet2\jee\model\User.class
+group2jee\projet2\jee\model\Credentials_.class
 group2jee\projet2\utils\Constants.class
 group2jee\projet2\jee\model\Employees.class
 group2jee\projet2\jee\model\EmployeesSessionBean.class

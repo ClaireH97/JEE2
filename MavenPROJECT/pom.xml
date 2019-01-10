@@ -135,11 +135,7 @@
         
         <resources>
             <resource>
-                <directory>src/main/java/group2jee/projet2/utils</directory>
-                <filtering>true</filtering>
-                <includes>
-                    <include>db.properties</include>
-                </includes>
+                <directory>src/main/resources</directory>
             </resource>
         </resources>
     </build>
