@@ -1,11 +1,10 @@
-# JEE2
-<h1>JEE Project Version 2</h1>
+# JEE Project
+
+
+
+<h1>Version 2</h1>
 By <br>
-Guillaume Billès <br>
-Guillaume Farge <br>
-Morgan Wolf <br>
-Vincent Roche <br>
-Claire Huang <br>
+Guillaume Billès | Guillaume Farge | Morgan Wolf | Vincent Roche | Claire Huang
 
 After cloning the project at this address : 
 https://github.com/ClaireH97/JEE2.git
