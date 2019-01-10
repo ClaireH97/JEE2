@@ -62,13 +62,13 @@ db.properties file is located in the src/java/utils folder<br>
 <h2>How to launch Version 2?</h2>
 After cloning the project from this address : https://github.com/ClaireH97/JEE2.git<br>
 Step 1 : create a MySQL database named "PROJET"<br>
-Step 2 : create an user "adm" with password "adm" <br>
+Step 2 : create an user "adm" with password "adm" (if you want to use different credentials, edit WEB-INF/glassfish-resources.xml)<br>
 Step 3 : execute the SQL script to fill the database (https://github.com/ClaireH97/JEE2/blob/master/MavenPROJECT/src/main/webapp/WEB-INF/mysqlScript.sql)<br>
 Step 4 : Clean and build the project<br>
 Step 5 : Run the project
 
 <h2>Features</h2>
-In this version, you have the following features: 
+In this version, you have the following features:<br>
 o Maven project <br>
 o JSP (EL et JSTL only / no Java code in JSPs)<br>
 o Java Beans <br>
