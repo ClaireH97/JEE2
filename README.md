@@ -58,7 +58,7 @@ In this version, the database used is JavaDB from NetBeans
 db.properties file is located in the src/java/utils folder<br>
 
 
-<h1>Version 2 (https://github.com/ClaireH97/JEE2)</h1>
+<h1>Version 2 (this one)</h1>
 <h2>How to launch Version 2?</h2>
 After cloning the project from this address : https://github.com/ClaireH97/JEE2.git<br>
 Step 1 : create a MySQL database named "PROJET"<br>
